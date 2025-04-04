@@ -1,54 +1,37 @@
-# React + TypeScript + Vite
+Live: https://moroix.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vitejs.dev/) – fast build tool and dev server
+- [React](https://react.dev/) – UI library
+- [TypeScript](https://www.typescriptlang.org/) – static type checking
+- [MUI](https://mui.com/) – Material Design components for React
 
-## Expanding the ESLint configuration
+## Installation and Setup:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `git clone https://github.com/your-username/moroix.git`
+- `cd some-company`
+- `npm install`
+- `npm run dev` (Opens in your browser at: http://localhost:5173)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Running with Netlify CLI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Make sure Netlify CLI is installed: `npm install -g netlify-cli`
+- `ntl dev`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Styling
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Component styling is implemented using Material UI.
+- CSS-in-JS is implemented using MUI's built-in `styled`.
+
+## Performance
+
+- Using Vite for extremely fast builds and module updates.
+
+## This project includes the following custom hooks and components:
+
+- `useScrollDirection`: A custom React hook that detects the direction of scrolling (up or down). This can be useful for implementing features like hiding navigation bars on scroll down.
+- `ScrollToTop`: A React component that automatically scrolls the user to the top of the page whenever the route changes. This improves user experience, especially on single-page applications.
+- `ScrollToTopButton`: A React component that renders a button (often a floating action button) that, when clicked, smoothly scrolls the user back to the top of the current page.
