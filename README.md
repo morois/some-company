@@ -11,8 +11,9 @@ Live: [https://example.com](https://example.com)
 
 ## Installation and Setup:
 
-- `git clone https://github.com/your-username/moroix.git`
+- `https://github.com/morois/some-company`
 - `cd some-company`
+- `nvm use`
 - `npm install`
 - `npm run dev` (Opens in your browser at: http://localhost:5173)
 
