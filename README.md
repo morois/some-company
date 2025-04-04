@@ -15,7 +15,6 @@ Live: [https://example.com](https://example.com)
 - `cd some-company`
 - `nvm use`
 - `npm install`
-- `npm run dev` (Opens in your browser at: http://localhost:5173)
 
 ## Running with Netlify CLI
 
