@@ -1,8 +1,13 @@
-import { AppBar, Toolbar, Typography } from '@mui/material';
+import { AppBar, styled, Toolbar, Typography } from '@mui/material';
 import ContactBtn from '../ContactBtn/ContactBtn';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useScrollDirection } from '../../hooks/useScrollDirection';
+
+const Logo = styled(Typography)`
+  font-family: 'Audiowide', sans-serif;
+  font-weight: 900;
+`;
 
 function Header() {
   const navigate = useNavigate();
@@ -32,7 +37,7 @@ function Header() {
       }}
     >
       <Toolbar>
-        <Typography
+        <Logo
           variant="h5"
           sx={{ mr: 'auto', cursor: 'pointer' }}
           role="button"
@@ -41,7 +46,7 @@ function Header() {
           onKeyDown={(e) => e.key === 'Enter' && handleClick()}
         >
           Some Company
-        </Typography>
+        </Logo>
         <ContactBtn />
       </Toolbar>
     </AppBar>

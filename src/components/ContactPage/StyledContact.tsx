@@ -35,6 +35,7 @@ export const StyledBox = styled(Box)`
 `;
 
 export const Title = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
   font-size: 32px;
   font-weight: 800;
   color: #222;

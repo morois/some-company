@@ -1,7 +1,7 @@
 import { styled, Box } from '@mui/material';
 import YouTube from 'react-youtube';
 
-const VideoWrapper = styled(Box)(({ theme }) => ({
+const VideoWrapper = styled(Box)(() => ({
   position: 'relative',
   paddingBottom: '56.25%',
   height: 0,

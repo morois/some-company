@@ -5,6 +5,7 @@ export const StyledContainer = styled(Container)`
 `;
 
 export const Title = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
   font-size: 40px;
   font-weight: 800;
   color: #222;

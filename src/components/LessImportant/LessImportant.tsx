@@ -8,7 +8,7 @@ import {
 function LessImportant() {
   return (
     <StyledContainer>
-      <Title variant="h3">Less important title</Title>
+      <Title>Less important title</Title>
       <StyledContactBtn>
         <ContactBtn />
       </StyledContactBtn>

@@ -1,6 +1,7 @@
 import { styled, Container, Typography, Box } from '@mui/material';
 
 export const StyledContainer = styled(Container)`
+  font-family: 'Winky Sans', sans-serif;
   padding: 16px;
   margin: 16px auto;
   max-width: 1800px;
@@ -18,8 +19,8 @@ export const StyledContainer = styled(Container)`
 
 export const Title = styled(Typography)`
   font-family: 'Winky Sans', sans-serif;
-  font-weight: 200px;
-  font-size: 60px;
+  font-weight: 700;
+  font-size: 40px;
   color: #222;
   margin-bottom: 10px;
   line-height: 1.2;
@@ -28,13 +29,14 @@ export const Title = styled(Typography)`
 
   @media (min-width: 480px) {
     font-size: 40px;
+    font-weight: 700;
     margin-bottom: 12px;
     margin-top: 20px;
   }
 
   @media (min-width: 600px) {
-    font-size: 42px;
-    font-weight: 100;
+    font-size: 40px;
+    font-weight: 700;
     margin-top: 32px;
     margin-bottom: 16px;
   }
@@ -43,6 +45,30 @@ export const Title = styled(Typography)`
     font-size: 60px;
     margin-top: 50px;
     margin-bottom: 20px;
+    font-weight: 700;
+  }
+`;
+
+export const Text = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #444;
+  max-width: 100%;
+
+  @media (min-width: 480px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  @media (min-width: 900px) {
+    font-size: 22px;
   }
 `;
 
@@ -99,6 +125,7 @@ export const RightColumn = styled(Box)`
   order: 2;
   max-width: 100%;
   overflow: hidden;
+  margin-top: 15px;
 
   iframe {
     max-width: 100%;
@@ -114,28 +141,6 @@ export const RightColumn = styled(Box)`
     justify-content: flex-end;
     min-height: 350px;
     order: initial;
-  }
-`;
-
-export const Text = styled(Typography)`
-  font-size: 14px;
-  line-height: 1.4;
-  color: #444;
-  max-width: 100%;
-
-  @media (min-width: 480px) {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-    line-height: 1.6;
-    max-width: 600px;
-  }
-
-  @media (min-width: 900px) {
-    font-size: 22px;
   }
 `;
 

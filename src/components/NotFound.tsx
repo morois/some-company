@@ -7,10 +7,14 @@ const NotFound404 = styled(Box)`
   height: 50vh;
 `;
 
+const Title = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
+`;
+
 function NotFound() {
   return (
     <NotFound404>
-      <Typography variant="h2">404 Not Found</Typography>
+      <Title variant="h2">404 Not Found</Title>
     </NotFound404>
   );
 }
