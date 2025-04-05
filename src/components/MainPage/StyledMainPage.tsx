@@ -1,28 +1,42 @@
-import { Box, Container, styled, Typography } from '@mui/material';
+import { styled, Container, Typography, Box } from '@mui/material';
 
 export const StyledContainer = styled(Container)`
   padding: 16px;
   margin: 16px auto;
   max-width: 1800px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     padding: 20px;
-    margin: 30px auto;
+    margin: 20px auto;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px;
+    margin: 40px auto;
   }
 `;
 
 export const Title = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
+  font-weight: 200px;
   font-size: 60px;
-  font-weight: 700;
   color: #222;
-  margin-bottom: 16px;
-  line-height: 1;
-  margin-top: 24px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  margin-top: 16px;
   word-break: break-word;
+
+  @media (min-width: 480px) {
+    font-size: 40px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
 
   @media (min-width: 600px) {
     font-size: 42px;
+    font-weight: 100;
     margin-top: 32px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: 900px) {
@@ -35,9 +49,14 @@ export const Title = styled(Typography)`
 export const StyledBox = styled(Container)`
   display: flex;
   flex-direction: column;
-  padding: 24px 16px;
+  padding: 16px;
   background-color: #ffffff;
-  gap: 32px;
+  gap: 20px;
+
+  @media (min-width: 480px) {
+    padding: 20px;
+    gap: 24px;
+  }
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -56,11 +75,17 @@ export const StyledBox = styled(Container)`
 export const LeftColumn = styled(Box)`
   flex: 1 1 100%;
   order: 1;
+  margin-bottom: 15px;
+
+  @media (min-width: 480px) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: 768px) {
     flex: 1;
     min-width: 300px;
     order: initial;
+    margin-bottom: 0;
   }
 `;
 
@@ -69,9 +94,13 @@ export const RightColumn = styled(Box)`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 200px;
+  min-height: 120px;
   text-align: center;
-  order: 0;
+  order: 2;
+
+  @media (min-width: 480px) {
+    min-height: 150px;
+  }
 
   @media (min-width: 768px) {
     flex: 1;
@@ -82,17 +111,19 @@ export const RightColumn = styled(Box)`
 `;
 
 export const Text = styled(Typography)`
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.4;
   color: #444;
   max-width: 100%;
 
   @media (min-width: 480px) {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   @media (min-width: 768px) {
     font-size: 20px;
+    line-height: 1.6;
     max-width: 600px;
   }
 

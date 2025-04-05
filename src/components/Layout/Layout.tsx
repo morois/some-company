@@ -7,7 +7,13 @@ import Footer from '../Footer/Footer';
 
 const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+      }}
+    >
       <ScrollToTop />
       <Header />
       <Box sx={{ flex: 1 }}>{children}</Box>
