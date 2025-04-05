@@ -75,7 +75,7 @@ export const StyledBox = styled(Container)`
 export const LeftColumn = styled(Box)`
   flex: 1 1 100%;
   order: 1;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 
   @media (min-width: 480px) {
     margin-bottom: 20px;
@@ -97,6 +97,13 @@ export const RightColumn = styled(Box)`
   min-height: 120px;
   text-align: center;
   order: 2;
+  max-width: 100%;
+  overflow: hidden;
+
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
   @media (min-width: 480px) {
     min-height: 150px;
