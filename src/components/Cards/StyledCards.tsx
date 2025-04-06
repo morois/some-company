@@ -6,6 +6,7 @@ export const CardStyle = styled(Card)`
 `;
 
 export const Title = styled(Typography)`
+  font-family: 'Winky Sans', sans-serif;
   font-size: 40px;
   font-weight: 800;
   color: #222;
