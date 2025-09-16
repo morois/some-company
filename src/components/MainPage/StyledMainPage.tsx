@@ -146,5 +146,7 @@ export const RightColumn = styled(Box)`
 
 export const Important = styled('span')`
   color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   font-weight: inherit;
 `;

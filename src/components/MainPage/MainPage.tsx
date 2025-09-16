@@ -1,6 +1,7 @@
 import Video from '../Video';
 import Cards from '../Cards/Cards';
 import LessImportant from '../LessImportant/LessImportant';
+import YouTube from 'react-youtube';
 import {
   StyledContainer,
   StyledBox,
@@ -17,11 +18,11 @@ function MainPage() {
       <StyledBox>
         <LeftColumn>
           <Title>
-            Most <Important>important</Important> title on the page
+            <Important>ВАЖНО!</Important>
           </Title>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            mattis, leo et condimentum ultrices.
+            Тут должно быть видео с YouTube. Если его нет, то вы знаете что надо
+            делать.
           </Text>
         </LeftColumn>
         <RightColumn>
